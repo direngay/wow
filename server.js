@@ -36,7 +36,7 @@ io.on('connection', (socket) => {
 const portArg = process.argv.indexOf('--port');
 const port = (portArg !== -1 && process.argv[portArg + 1])
   ? parseInt(process.argv[portArg + 1])
-  : (process.env.PORT || 3001);
+  : (process.env.PORT || 3008);
 
 server.listen(port, () => {
   console.log(`server running at http://localhost:${port}`);
